@@ -1,0 +1,163 @@
+@import url("container.css");
+
+:root {
+    /* CSS HEX */
+   --pacific-blue: #2ab7caff;
+   --orange-yellow-crayola: #fed766ff;
+   --gainsboro: #e6e6eaff;
+   --davys-grey: #50514fff;
+   --fire-opal: #f25f5cff;
+   }
+
+h1, h2, h3 {
+    font-family: 'Cabin', sans-serif;
+}
+​
+p, li {
+    font-family: 'Kanit', sans-serif;
+}
+
+ * {
+    /* border: 1px solid black; */
+    /* background-image: url(images/head-background); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.head-container {
+    display: flex;
+    width: auto;
+    /* border: 2px solid red; */
+    background-color: var(--gainsboro);
+    align-items: center;
+}
+
+nav {
+    width: 100vw;
+    /* border: 2px solid blue; */
+    /* background-color: var(--davys-grey); */
+}
+
+.nav-list {
+    list-style: none;
+    display:flex;
+    align-items: flex-end;
+    height: 100%;
+    margin: 0%;
+    width: 100%;
+    font-size: 1.5em;
+    border: 2 px dotted black; 
+    padding: 0%;
+}
+
+.nav-bar {
+    list-style: none;
+    display:flex;
+    /* height: 100%; */
+    width: 100%;
+    margin: 0%;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: var(--gainsboro);
+}
+
+.nav-list-child {
+    margin: 0 5em;
+    align-items: flex-end;
+    font-size: 1.5em;
+    margin: 0%;
+    justify-content: space-between;
+    background-color: var(--gainsboro);
+    padding: 0 1em;
+    color: var(--gainsboro);
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.name-head {
+    display: flex;
+    background-image: url(/images/germany-banner.png);
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 25vh;
+    width: 100%;
+    z-index: 1;
+    margin: 0%;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: var(--davys-grey);
+    z-index: 2;
+    opacity: 1;
+    margin: 0%;
+    padding-right: .5em;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Removed view height. */
+}
+
+.list-container {
+    width: 31vw;
+    padding: 1em;
+    height: 45vh;
+    text-align: center;
+}
+
+.list-child {
+    height: 90%;
+    list-style: none;
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.list-item {
+    margin: 5vh 0; /* Updated with container.css import. */
+}
+
+/* Updated nav-bar rollover */
+
+.country-link {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--davys-grey);
+    padding:  7vh 1.0em;
+}
+
+a:hover {
+    color: var(--pacific-blue);
+}
+
+.nav-list-child:hover {
+    background-color: var(--orange-yellow-crayola);
+    opacity: 1.0;
+}
+
+/* Updated footer with display flex and height/padding. */
+
+footer {
+    display: flex;
+    height: 10vh;
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--gainsboro);
+    padding: 0 1.5em;
+    align-items: center;
+}

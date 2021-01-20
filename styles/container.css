@@ -1,0 +1,30 @@
+:root {
+    /* CSS HEX */
+   --pacific-blue: #2ab7caff;
+   --orange-yellow-crayola: #fed766ff;
+   --gainsboro: #e6e6eaff;
+   --davys-grey: #50514fff;
+   --fire-opal: #f25f5cff;
+   }
+
+main {
+    height: 75vh;
+    padding-bottom: 5vh;
+    background-color: var(--gainsboro);
+}
+
+.list-container h2 {
+    color: var(--fire-opal);
+    background-color: var(--orange-yellow-crayola);
+    padding: .5vh 0;
+    border: .5px solid var(--fire-opal);
+    border-radius: .25em;
+}
+
+.list-child {
+    background-color: var(--gainsboro);
+}
+
+footer {
+    border-top: 2px solid var(--pacific-blue);
+}
