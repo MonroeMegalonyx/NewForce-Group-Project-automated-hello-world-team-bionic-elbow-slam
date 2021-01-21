@@ -4,32 +4,34 @@ let mexicoCityData = [
     "Ecatepec",
     "Guadalajara"
 ];
+
 let mexicoLandmarkData = [
     "Angel de la Independencia",
     "Zocalo",
     "Catedral Metropolitana"
 ];
+
 let mexicoCitizenData = [
     "Mexico El Chapo Guzman",
     "Canelo Alvarez",
     "Carlos Santana"
 ];
 
-const useCityData = () => {
+export const useCityData = () => {
     
     // alphabetize object
     const dataArray = mexicoCityData.sort()
     
     return dataArray
 }
-const useLandmarkData = () => {
+export const useLandmarkData = () => {
     
     // alphabetize object
     const dataArray = mexicoLandmarkData.sort()
     
     return dataArray
 }
-const useCitizenData = () => {
+export const useCitizenData = () => {
     
     // alphabetize object
     const dataArray = mexicoCitizenData.sort()

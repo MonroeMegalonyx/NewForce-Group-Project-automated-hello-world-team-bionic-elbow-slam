@@ -1,3 +1,5 @@
-import { completedListHTML } from './list.js'
+import { completedListHTML } from './Mexico/list.js'
 
-completedListHTML("City")
+completedListHTML("Cities")
+completedListHTML("Landmarks")
+completedListHTML("Citizens")

@@ -2,21 +2,22 @@ import { useCityData, useCitizenData, useLandmarkData } from './mexicoDataProvid
 import { createHTML } from './listItem.js'
 
 export const completedListHTML = (listName) => {
+    console.log(listName)
     let dataArray = [];
     let htmlListItem = '';
-    if (listName === "City") {
-        dataArray.push(useCityData());
+    if (listName === "Cities") {
+        dataArray = (useCityData());
         htmlListItem = document.querySelector("#city-list-container")
-    } else if (listName === "Landmark") {
-        dataArray.push(useLandmarkData());
+    } else if (listName === "Landmarks") {
+        dataArray = (useLandmarkData());
         htmlListItem = document.querySelector("#landmarks-list-container")
-    } else if (listName === "Citizen") {
-        dataArray.push(useCitizenData());
+    } else if (listName === "Citizens") {
+        dataArray = (useCitizenData());
         htmlListItem = document.querySelector("#citizens-list-container")
     }
     console.log(dataArray)
     let htmlString = "";
-    for (const dataItem in dataArray) {
+    for (const dataItem of dataArray) {
         htmlString += createHTML(dataItem);
     }
 
