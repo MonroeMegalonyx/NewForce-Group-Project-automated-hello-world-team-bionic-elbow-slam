@@ -20,8 +20,16 @@ export function brazilLists() {
 
     const citiesHTML = buildBrazilHTML(citiesCopy);
     const landmarksHTML = buildBrazilHTML(landmarksCopy);
-    const 
+    const famousPersonHTML = buildBrazilHTML(famousPersonCopy);
 
+    
+    brazilContainer.innerHTML = 
+    `
+    ${citiesHTML}
+    ${landmarksHTML}
+    ${famousPersonHTML}
+
+    `
 
 
 }
