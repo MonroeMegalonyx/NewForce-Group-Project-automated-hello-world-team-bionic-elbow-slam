@@ -10,9 +10,9 @@ export const italyCities = (citiesArray) => {
 export const italyLandmark = (landmarkArray) => {
     return ` 
     <ul class = 'list-child'>
-        <li class = 'list-item'>${citiesArray[0]}</li>
-        <li class = 'list-item'>${citiesArray[1]}</li>
-        <li class = 'list-item'>${citiesArray[2]}</li>
+        <li class = 'list-item'>${landmarkArray[0]}</li>
+        <li class = 'list-item'>${landmarkArray[1]}</li>
+        <li class = 'list-item'>${landmarkArray[2]}</li>
     </ul>`
 }
 
@@ -25,4 +25,3 @@ export const italyCitizens = (citizenArray) => {
     </ul>`
 }
 
-//ENDED HERE
