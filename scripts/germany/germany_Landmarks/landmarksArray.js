@@ -1,17 +1,17 @@
-// Save the list of cities as an array and provide an export function for the data
-const citiesArray = [
+// Save the list of landmark as an array and provide an export function for the data
+const landmarksArray = [
     {
-        name: "Berlin",
+        name: "Cologne Cathedral",
     },
     {
-        name: "Hamburg",
+        name: "Brandenburg Gate",
     },
     {
-        name: "Munich",
+        name: "Neuschwanstein Castle",
     },  
 ];
 
 // Export function for list of cities
-export const getGermanCities = () => {
-    return citiesArray.slice();
+export const getGermanLandmarks = () => {
+    return landmarksArray.slice();
 }
