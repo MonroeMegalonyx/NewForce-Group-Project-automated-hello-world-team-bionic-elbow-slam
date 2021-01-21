@@ -1,15 +1,17 @@
-let brazilLandmarks = [
-    
-    {
-        name:  "Iguazu Falls"
-    },
+import { useLandmarks } from "./landmarksDataProvider.js";
+import { landmarkCard } from "./Landmarks.js";
 
-    {
-        name:  "Christ the Redeemer"
-    },
-   
-    {
-        name:  "Sugar Loaf Mountain"
+
+let landmarkContainer = document.querySelector("#landmarks-list")
+
+export function landmarksList(){
+    const landmarkCopy = useLandmarks()
+
+    let landmarkHTMLstring =''
+
+    for(const singleLandmark of landmarkCopy){
+        landmarkHTMLstring += landmarkCard(singleLandmark)
     }
-    
-]
+
+    landmarkContainer.innerHTML += `${landmarkHTMLstring}`
+}
