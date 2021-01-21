@@ -1,10 +1,8 @@
-import { useCities, useFamousPerson, useLandmarks} from './brazilDataProvider.js'
-useCities()
-useFamousPerson()
-useLandmarks()
 
-import { brazilLists } from './brazilList.js'
-brazilLists()
+import { cityList } from './BrazilCities/citiesList.js'
+cityList()
 
+import { peopleList } from "./BrazilFamousPeople/famousPeopleList.js"
+peopleList()
 
 

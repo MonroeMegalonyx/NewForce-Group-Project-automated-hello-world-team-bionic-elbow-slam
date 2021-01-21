@@ -1,34 +1,18 @@
-export function country(countryListArray) {
+export function cityCard(singleCity) {
+    console.log("this is single city", singleCity)
+    
     return `
     
-    <section class = 'list-container'>
+        <section class = 'list-container'>
         <h2>Cities</h2>
              <ul class = 'list-child'>
-                <li class = 'list-item'>${countryListArray[0]}</li>
-                <li class = 'list-item'>${countryListArray[1]}</li>
-                <li class = 'list-item'>${countryListArray[2]}</li>
+                <li class = 'list-item'>${singleCity[0]}</li>
+                <li class = 'list-item'>${singleCity[1]}</li>
+                <li class = 'list-item'>${singleCity[2]}</li>
             </ul>
-    </section>
+            </section>
 
 
-    <section class = 'list-container'>
-        <h2>Landmarks</h2>
-            <ul class = 'list-child'>
-                <li class = 'list-item'>${countryListArray[0]}</li>
-                <li class = 'list-item'>${countryListArray[1]}</li>
-                <li class = 'list-item'>${countryListArray[2]}</li>
-            </ul>
-    </section>
-
-    <section class = 'list-container'>
-        <h2>Famous citizens</h2>
-            <ul class = 'list-child'>
-                <li class = 'list-item'>${countryListArray[0]}</li>
-                <li class = 'list-item'>${countryListArray[1]}</li>
-                <li class = 'list-item'>${countryListArray[2]}</li>
-            </ul>
-    </section>
-    
     
     `
 }
