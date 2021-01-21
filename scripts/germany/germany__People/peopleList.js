@@ -1,15 +1,15 @@
-// Takes HTML string and array of all cities as input and exports the full HTML block for the list of cities
-import { getGermanCities } from "./citiesArray.js";
-import { tagGermanCities } from "./citiesString.js";
+// Takes HTML string and array of all people as input and exports the full HTML block for the list of people
+import { getGermanPeople } from "./peopleArray.js";
+import { tagGermanPeople } from "./peopleString.js";
 
-let germanCityContainer = document.querySelector("#german-cities");
+let germanCityContainer = document.querySelector("#german-people");
 
-export function listGermanCities() {
-    const allGermanCities = getGermanCities();
-    let germanCitiesListHTML = "";
-    for (let i = 0; i < allGermanCities.length; i++) {
-        germanCitiesListHTML += tagGermanCities(allGermanCities[i]);
+export function listGermanPeople() {
+    const allGermanPeople = getGermanPeople();
+    let germanPeopleListHTML = "";
+    for (let i = 0; i < allGermanPeople.length; i++) {
+        germanPeopleListHTML += tagGermanPeople(allGermanPeople[i]);
     }
 
-    germanCityContainer.innerHTML = `<h2>List of Cities</h2>${germanCitiesListHTML}`;
+    germanCityContainer.innerHTML = `<h2>List of People</h2>${germanPeopleListHTML}`;
 }

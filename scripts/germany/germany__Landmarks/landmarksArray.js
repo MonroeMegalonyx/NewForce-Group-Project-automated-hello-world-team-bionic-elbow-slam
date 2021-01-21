@@ -11,7 +11,7 @@ const landmarksArray = [
     },  
 ];
 
-// Export function for list of cities
+// Export function for list of landmarks
 export const getGermanLandmarks = () => {
     return landmarksArray.slice();
 }

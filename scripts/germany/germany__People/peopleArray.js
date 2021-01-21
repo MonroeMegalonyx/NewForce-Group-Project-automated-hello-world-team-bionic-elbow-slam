@@ -1,17 +1,17 @@
-// Save the list of cities as an array and provide an export function for the data
-const citiesArray = [
+// Save the list of people as an array and provide an export function for the data
+const peopleArray = [
     {
-        name: "Berlin",
+        name: "Ludwig van Beethoven",
     },
     {
-        name: "Hamburg",
+        name: "Albert Einstein",
     },
     {
-        name: "Munich",
+        name: "Michael Schumacher",
     },  
 ];
 
-// Export function for list of cities
-export const getGermanCities = () => {
-    return citiesArray.slice();
+// Export function for list of people
+export const getGermanPeople = () => {
+    return peopleArray.slice();
 }
